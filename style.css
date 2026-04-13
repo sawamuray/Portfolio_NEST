@@ -889,7 +889,7 @@ iframe {
   .site-preview iframe {
     height: 520px;
   }
-}
+
 
 .contact-box {
   background: #ffffff;
@@ -996,4 +996,18 @@ iframe {
   .work-frame {
     height: 220px;
   }
+}
+@media (max-width: 768px) {
+
+  .work-frame.image-frame {
+    height: auto !important;   /* ←高さ固定やめる🔥 */
+    padding: 12px;
+  }
+
+  .image-frame img {
+    height: auto !important;
+    max-height: 260px;   /* ←ちょうどいいサイズ */
+    object-fit: contain;
+  }
+
 }
